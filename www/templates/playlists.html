@@ -1,0 +1,13 @@
+<ion-view view-title="Playlists">
+  <ion-content>
+    <button class="button button-clear" ng-click="verdadero()"><span>True</span>
+    </button>
+    <button class="button button-clear" ng-click="falso()"><span>False</span>
+    </button>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
